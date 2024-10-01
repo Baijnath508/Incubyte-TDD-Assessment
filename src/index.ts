@@ -1,3 +1,4 @@
+/* Check negative numbers */
 const negativeNumbersCheck = (numbers: number[]) => {
     const negativeNumbers = numbers.filter(number => number < 0)
     if (negativeNumbers.length > 0) {
@@ -5,6 +6,7 @@ const negativeNumbersCheck = (numbers: number[]) => {
     }
 }
 
+/* Helps to split the string based upon the delimiter and return the sum*/
 const splitAndAdd = (numbers: string, delimiter: string): number => {
     const numberArray = numbers.split(delimiter).map(Number)
     negativeNumbersCheck(numberArray)
